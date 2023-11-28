@@ -1,0 +1,571 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>AlegriArt-descripcion.com</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="../CSS/stilo.css">
+    <link rel="stylesheet" href="../CSS/descripcion.css">
+
+</head>
+
+<body class="bg-black">
+    <!-- --------------------------------------------------------------------------Navbar------------------------------------------------------------------- -->
+    <nav class="navbar navbar-expand-lg bg-color-nav sticky-top">
+        <div>
+            <button class=" icon-style paleta align-i">
+                <i class="fa-solid fa-palette"></i>
+            </button>
+        </div>
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a href="/HTML/alegriArt.html"><button type="button" class="btn btn-outline-secondary">Inicio</button></a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-white btn btn-outline-secondary" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Categorias
+                        </a>
+                        <ul class="dropdown-menu bg-black">
+                            <li><a class="dropdown-item ddcolor btn btn-outline-secondary" href="/HTML/listaDeProductos.html">Animales</a>
+                            </li>
+                            <li><a class="dropdown-item ddcolor btn btn-outline-secondary" href="/HTML/listaDeProductos.html">Abstractos</a></li>
+                            <li><a class="dropdown-item ddcolor btn btn-outline-secondary" href="/HTML/listaDeProductos.html">Flores y
+                                    Naturaleza</a></li>
+                            <li><a class="dropdown-item ddcolor btn btn-outline-secondary" href="/HTML/listaDeProductos.html">Arte Religioso</a>
+                            </li>
+                            <li><a class="dropdown-item ddcolor btn btn-outline-secondary" href="/HTML/listaDeProductos.html">Lienzografias</a>
+                            </li>
+                            <li><a class="dropdown-item ddcolor btn btn-outline-secondary" href="/HTML/listaDeProductos.html">Obras Únicas</a>
+                            </li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item ddcolor" href="#">Retoques Artísticos</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item d-none" id="cajaBuscador">
+                        <div class="input-group mb-3">
+                            <span class="input-group-text" id="basic-addon1">@</span>
+                            <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1" style="width: 700px;">
+                        </div>
+                    </li>
+                </ul>
+
+                <!--Iconos-->
+                <div class="d-flex">
+
+                    <div>
+                        <button class="icon-style">
+                            <i class="fa-solid fa-user-tie"></i> <!--user-->
+                        </button>
+                    </div>
+                    <div>
+                        <button class="icon-style" type="button" id="btnLupa" data-vista="no">
+                            <i class="fa-solid fa-magnifying-glass"></i></i> <!--lupa-->
+                        </button>
+                    </div>
+                    <div>
+                        <button class="icon-style position-relative">
+                            <i class="fa-solid fa-heart"></i></i> <!--favoritos-->
+                            <span
+                                class="position-absolute top-40 start-90 translate-middle p-1 bg-danger border border-light rounded-circle">
+                                <span class="visually-hidden">New alerts</span>
+                            </span>
+                        </button>
+                    </div>
+                    <div>
+                        <button class="icon-style">
+                            <i class="fa-solid fa-cart-arrow-down"></i> <!--carrito de compras-->
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+    </nav>
+    <!-- --------------------------------------------------------------------------SliderInf----------------------------------------------------------------------- -->
+    <div id="carouselExampleInterval" class="carousel slide " data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <a class="text-white" href="">
+                <div class="carousel-item active carousel-item-start text-white" data-bs-interval="7000">
+                    <div class=" bg-secondary d-flex justify-content-center align-content-center barInf">
+                        <div>
+                            <i class="fa-solid fa-truck-moving me-3"></i>
+                        </div>
+                        <div>ENVIO GRATIS!</div>
+                    </div>
+                </div>
+            </a>
+            <a class="text-white" href="">
+                <div class="carousel-item carousel-item-next carousel-item-start text-white" data-bs-interval="7000">
+                    <div class=" bg-secondary d-flex justify-content-center align-content-center barInf">
+                        <div>
+                            <i class="fa-regular fa-envelope me-3"></i>
+                        </div>
+                        <div>CONTACTANOS!</div>
+                    </div>
+                </div>
+            </a>
+            <a class="text-white" href="">
+                <div class="carousel-item  text-white" data-bs-interval="7000">
+                    <div class=" bg-secondary d-flex justify-content-center align-content-center barInf">
+                        <div>
+                            <i class="fa-solid fa-paintbrush me-3"></i>
+                        </div>
+                        <div>NUEVA COLECCION!</div>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+    <!-- ---------------------------------------------------------------------------SlaiderDescripcion-------------------------------------------------------------- -->
+    <main id="bodyDiv">
+        <section class="container">
+            <div></div>
+            
+            <div class="row d-flex mt-5">
+                <a class="col-md-3 text-decoration-none" href="/HTML/descripcion.html">
+                    <div class="card bg-black" style="width: 18rem;">
+                        <img src="/img/obras1.webp" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-center cuerpo"><p>A L E G R I  A R T</p></div>
+                            <div class="d-flex justify-content-center cuerpo">
+                                <P class="text-decoration-line-through cuerpo">$ 299.000</P> - 
+                                <p class="card-text">$ 239.000</p>
+                            </div>
+                            <div class="d-flex justify-content-center cuerpo"><p>Te ahorras 20%</p></div>
+                        </div>
+                    </div>
+                </a>
+                
+                <a class="col-md-3 text-decoration-none" href="/HTML/descripcion.html">
+                    <div class="card bg-black" style="width: 18rem;">
+                        <img src="/img/flores.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-center cuerpo"><p>A L E G R I  A R T</p></div>
+                            <div class="d-flex justify-content-center cuerpo">
+                                <P class="text-decoration-line-through cuerpo">$ 299.000</P> - 
+                                <p class="card-text">$ 239.000</p>
+                            </div>
+                            <div class="d-flex justify-content-center cuerpo"><p>Te ahorras 20%</p></div>
+                        </div>
+                    </div>
+                </a>
+                
+                <a class="col-md-3 text-decoration-none" href="/HTML/descripcion.html">
+                    <div class="card bg-black" style="width: 18rem;">
+                        <img src="/img/obras.webp" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-center cuerpo"><p>A L E G R I  A R T</p></div>
+                            <div class="d-flex justify-content-center cuerpo">
+                                <P class="text-decoration-line-through cuerpo">$ 299.000</P> - 
+                                <p class="card-text">$ 239.000</p>
+                            </div>
+                            <div class="d-flex justify-content-center cuerpo"><p>Te ahorras 20%</p></div>
+                        </div>
+                    </div>
+                </a>
+                
+                <a class="col-md-3 text-decoration-none" href="/HTML/descripcion.html">
+                    <div class="card bg-black" style="width: 18rem;">
+                        <img src="/img/abstractos.webp" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-center cuerpo"><p>A L E G R I  A R T</p></div>
+                            <div class="d-flex justify-content-center cuerpo">
+                                <P class="text-decoration-line-through cuerpo">$ 299.000</P> - 
+                                <p class="card-text">$ 239.000</p>
+                            </div>
+                            <div class="d-flex justify-content-center cuerpo"><p>Te ahorras 20%</p></div>
+                        </div>
+                    </div>
+                </a>
+                
+                <a class="col-md-3 text-decoration-none mt-5 mb-4" href="/HTML/descripcion.html">
+                    <div class="card bg-black" style="width: 18rem;">
+                        <img src="/img/grilla2.webp" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-center cuerpo"><p>A L E G R I  A R T</p></div>
+                            <div class="d-flex justify-content-center cuerpo">
+                                <P class="text-decoration-line-through cuerpo">$ 299.000</P> - 
+                                <p class="card-text">$ 239.000</p>
+                            </div>
+                            <div class="d-flex justify-content-center cuerpo"><p>Te ahorras 20%</p></div>
+                        </div>
+                    </div>
+                </a>
+                
+                <a class="col-md-3 text-decoration-none mt-5 mb-4" href="/HTML/descripcion.html">
+                    <div class="card bg-black" style="width: 18rem;">
+                        <img src="/img/x1.webp" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-center cuerpo"><p>A L E G R I  A R T</p></div>
+                            <div class="d-flex justify-content-center cuerpo">
+                                <P class="text-decoration-line-through cuerpo">$ 299.000</P> - 
+                                <p class="card-text">$ 239.000</p>
+                            </div>
+                            <div class="d-flex justify-content-center cuerpo"><p>Te ahorras 20%</p></div>
+                        </div>
+                    </div>
+                </a>
+                
+                <a class="col-md-3 text-decoration-none mt-5 mb-4" href="/HTML/descripcion.html">
+                    <div class="card bg-black" style="width: 18rem;">
+                        <img src="/img/x2.webp" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-center cuerpo"><p>A L E G R I  A R T</p></div>
+                            <div class="d-flex justify-content-center cuerpo">
+                                <P class="text-decoration-line-through cuerpo">$ 299.000</P> - 
+                                <p class="card-text">$ 239.000</p>
+                            </div>
+                            <div class="d-flex justify-content-center cuerpo"><p>Te ahorras 20%</p></div>
+                        </div>
+                    </div>
+                </a>
+                
+                <a class="col-md-3 text-decoration-none mt-5 mb-4" href="/HTML/descripcion.html">
+                    <div class="card bg-black" style="width: 18rem;">
+                        <img src="/img/x3.webp" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-center cuerpo"><p>A L E G R I  A R T</p></div>
+                            <div class="d-flex justify-content-center cuerpo">
+                                <P class="text-decoration-line-through cuerpo">$ 299.000</P> - 
+                                <p class="card-text">$ 239.000</p>
+                            </div>
+                            <div class="d-flex justify-content-center cuerpo"><p>Te ahorras 20%</p></div>
+                        </div>
+                    </div>
+                </a>
+                
+                <a class="col-md-3 text-decoration-none mt-5 mb-4" href="/HTML/descripcion.html">
+                    <div class="card bg-black" style="width: 18rem;">
+                        <img src="/img/grilla2.webp" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-center cuerpo"><p>A L E G R I  A R T</p></div>
+                            <div class="d-flex justify-content-center cuerpo">
+                                <P class="text-decoration-line-through cuerpo">$ 299.000</P> - 
+                                <p class="card-text">$ 239.000</p>
+                            </div>
+                            <div class="d-flex justify-content-center cuerpo"><p>Te ahorras 20%</p></div>
+                        </div>
+                    </div>
+                </a>
+                
+                <a class="col-md-3 text-decoration-none mt-5 mb-4" href="/HTML/descripcion.html">
+                    <div class="card bg-black" style="width: 18rem;">
+                        <img src="/img/x1.webp" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-center cuerpo"><p>A L E G R I  A R T</p></div>
+                            <div class="d-flex justify-content-center cuerpo">
+                                <P class="text-decoration-line-through cuerpo">$ 299.000</P> - 
+                                <p class="card-text">$ 239.000</p>
+                            </div>
+                            <div class="d-flex justify-content-center cuerpo"><p>Te ahorras 20%</p></div>
+                        </div>
+                    </div>
+                </a>
+                
+                <a class="col-md-3 text-decoration-none mt-5 mb-4" href="/HTML/descripcion.html">
+                    <div class="card bg-black" style="width: 18rem;">
+                        <img src="/img/x2.webp" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-center cuerpo"><p>A L E G R I  A R T</p></div>
+                            <div class="d-flex justify-content-center cuerpo">
+                                <P class="text-decoration-line-through cuerpo">$ 299.000</P> - 
+                                <p class="card-text">$ 239.000</p>
+                            </div>
+                            <div class="d-flex justify-content-center cuerpo"><p>Te ahorras 20%</p></div>
+                        </div>
+                    </div>
+                </a>
+                
+                <a class="col-md-3 text-decoration-none mt-5 mb-4" href="/HTML/descripcion.html">
+                    <div class="card bg-black" style="width: 18rem;">
+                        <img src="/img/x3.webp" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-center cuerpo"><p>A L E G R I  A R T</p></div>
+                            <div class="d-flex justify-content-center cuerpo">
+                                <P class="text-decoration-line-through cuerpo">$ 299.000</P> - 
+                                <p class="card-text">$ 239.000</p>
+                            </div>
+                            <div class="d-flex justify-content-center cuerpo"><p>Te ahorras 20%</p></div>
+                        </div>
+                    </div>
+                </a>
+                
+                <a class="col-md-3 text-decoration-none mt-5 mb-4" href="/HTML/descripcion.html">
+                    <div class="card bg-black" style="width: 18rem;">
+                        <img src="/img/grilla2.webp" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-center cuerpo"><p>A L E G R I  A R T</p></div>
+                            <div class="d-flex justify-content-center cuerpo">
+                                <P class="text-decoration-line-through cuerpo">$ 299.000</P> - 
+                                <p class="card-text">$ 239.000</p>
+                            </div>
+                            <div class="d-flex justify-content-center cuerpo"><p>Te ahorras 20%</p></div>
+                        </div>
+                    </div>
+                </a>
+                
+                <a class="col-md-3 text-decoration-none mt-5 mb-4" href="/HTML/descripcion.html">
+                    <div class="card bg-black" style="width: 18rem;">
+                        <img src="/img/x1.webp" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-center cuerpo"><p>A L E G R I  A R T</p></div>
+                            <div class="d-flex justify-content-center cuerpo">
+                                <P class="text-decoration-line-through cuerpo">$ 299.000</P> - 
+                                <p class="card-text">$ 239.000</p>
+                            </div>
+                            <div class="d-flex justify-content-center cuerpo"><p>Te ahorras 20%</p></div>
+                        </div>
+                    </div>
+                </a>
+                
+                <a class="col-md-3 text-decoration-none mt-5 mb-4" href="/HTML/descripcion.html">
+                    <div class="card bg-black" style="width: 18rem;">
+                        <img src="/img/x2.webp" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-center cuerpo"><p>A L E G R I  A R T</p></div>
+                            <div class="d-flex justify-content-center cuerpo">
+                                <P class="text-decoration-line-through cuerpo">$ 299.000</P> - 
+                                <p class="card-text">$ 239.000</p>
+                            </div>
+                            <div class="d-flex justify-content-center cuerpo"><p>Te ahorras 20%</p></div>
+                        </div>
+                    </div>
+                </a>
+                
+                <a class="col-md-3 text-decoration-none mt-5 mb-4" href="/HTML/descripcion.html">
+                    <div class="card bg-black" style="width: 18rem;">
+                        <img src="/img/x3.webp" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-center cuerpo"><p>A L E G R I  A R T</p></div>
+                            <div class="d-flex justify-content-center cuerpo">
+                                <P class="text-decoration-line-through cuerpo">$ 299.000</P> - 
+                                <p class="card-text">$ 239.000</p>
+                            </div>
+                            <div class="d-flex justify-content-center cuerpo"><p>Te ahorras 20%</p></div>
+                        </div>
+                    </div>
+                </a>
+                
+                <a class="col-md-3 text-decoration-none mt-5 mb-4" href="/HTML/descripcion.html">
+                    <div class="card bg-black" style="width: 18rem;">
+                        <img src="/img/grilla2.webp" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-center cuerpo"><p>A L E G R I  A R T</p></div>
+                            <div class="d-flex justify-content-center cuerpo">
+                                <P class="text-decoration-line-through cuerpo">$ 299.000</P> - 
+                                <p class="card-text">$ 239.000</p>
+                            </div>
+                            <div class="d-flex justify-content-center cuerpo"><p>Te ahorras 20%</p></div>
+                        </div>
+                    </div>
+                </a>
+                
+                <a class="col-md-3 text-decoration-none mt-5 mb-4" href="/HTML/descripcion.html">
+                    <div class="card bg-black" style="width: 18rem;">
+                        <img src="/img/x1.webp" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-center cuerpo"><p>A L E G R I  A R T</p></div>
+                            <div class="d-flex justify-content-center cuerpo">
+                                <P class="text-decoration-line-through cuerpo">$ 299.000</P> - 
+                                <p class="card-text">$ 239.000</p>
+                            </div>
+                            <div class="d-flex justify-content-center cuerpo"><p>Te ahorras 20%</p></div>
+                        </div>
+                    </div>
+                </a>
+                
+                <a class="col-md-3 text-decoration-none mt-5 mb-4" href="/HTML/descripcion.html">
+                    <div class="card bg-black" style="width: 18rem;">
+                        <img src="/img/x2.webp" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-center cuerpo"><p>A L E G R I  A R T</p></div>
+                            <div class="d-flex justify-content-center cuerpo">
+                                <P class="text-decoration-line-through cuerpo">$ 299.000</P> - 
+                                <p class="card-text">$ 239.000</p>
+                            </div>
+                            <div class="d-flex justify-content-center cuerpo"><p>Te ahorras 20%</p></div>
+                        </div>
+                    </div>
+                </a>
+                
+                <a class="col-md-3 text-decoration-none mt-5 mb-4" href="/HTML/descripcion.html">
+                    <div class="card bg-black" style="width: 18rem;">
+                        <img src="/img/x3.webp" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-center cuerpo"><p>A L E G R I  A R T</p></div>
+                            <div class="d-flex justify-content-center cuerpo">
+                                <P class="text-decoration-line-through cuerpo">$ 299.000</P> - 
+                                <p class="card-text">$ 239.000</p>
+                            </div>
+                            <div class="d-flex justify-content-center cuerpo"><p>Te ahorras 20%</p></div>
+                        </div>
+                    </div>
+                </a>
+                
+                <a class="col-md-3 text-decoration-none mt-5 mb-4" href="/HTML/descripcion.html">
+                    <div class="card bg-black" style="width: 18rem;">
+                        <img src="/img/grilla2.webp" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-center cuerpo"><p>A L E G R I  A R T</p></div>
+                            <div class="d-flex justify-content-center cuerpo">
+                                <P class="text-decoration-line-through cuerpo">$ 299.000</P> - 
+                                <p class="card-text">$ 239.000</p>
+                            </div>
+                            <div class="d-flex justify-content-center cuerpo"><p>Te ahorras 20%</p></div>
+                        </div>
+                    </div>
+                </a>
+                
+                <a class="col-md-3 text-decoration-none mt-5 mb-4" href="/HTML/descripcion.html">
+                    <div class="card bg-black" style="width: 18rem;">
+                        <img src="/img/x1.webp" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-center cuerpo"><p>A L E G R I  A R T</p></div>
+                            <div class="d-flex justify-content-center cuerpo">
+                                <P class="text-decoration-line-through cuerpo">$ 299.000</P> - 
+                                <p class="card-text">$ 239.000</p>
+                            </div>
+                            <div class="d-flex justify-content-center cuerpo"><p>Te ahorras 20%</p></div>
+                        </div>
+                    </div>
+                </a>
+                
+                <a class="col-md-3 text-decoration-none mt-5 mb-4" href="/HTML/descripcion.html">
+                    <div class="card bg-black" style="width: 18rem;">
+                        <img src="/img/x2.webp" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-center cuerpo"><p>A L E G R I  A R T</p></div>
+                            <div class="d-flex justify-content-center cuerpo">
+                                <P class="text-decoration-line-through cuerpo">$ 299.000</P> - 
+                                <p class="card-text">$ 239.000</p>
+                            </div>
+                            <div class="d-flex justify-content-center cuerpo"><p>Te ahorras 20%</p></div>
+                        </div>
+                    </div>
+                </a>
+                
+                <a class="col-md-3 text-decoration-none mt-5 mb-4" href="/HTML/descripcion.html">
+                    <div class="card bg-black" style="width: 18rem;">
+                        <img src="/img/x3.webp" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-center cuerpo"><p>A L E G R I  A R T</p></div>
+                            <div class="d-flex justify-content-center cuerpo">
+                                <P class="text-decoration-line-through cuerpo">$ 299.000</P> - 
+                                <p class="card-text">$ 239.000</p>
+                            </div>
+                            <div class="d-flex justify-content-center cuerpo"><p>Te ahorras 20%</p></div>
+                        </div>
+                    </div>
+                </a>
+                
+                <div class="d-flex justify-content-center">
+                    <nav aria-label="Page navigation">
+                        <ul class="pagination">
+                          <li class="page-item">
+                            <a class="page-link" href="#" aria-label="Previous">
+                              <span aria-hidden="true">«</span>
+                            </a>
+                          </li>
+                          <li class="page-item"><a class="page-link" href="#">1</a></li>
+                          <li class="page-item"><a class="page-link" href="#">2</a></li>
+                          <li class="page-item"><a class="page-link" href="#">3</a></li>
+                          <li class="page-item">
+                            <a class="page-link" href="#" aria-label="Next">
+                              <span aria-hidden="true">»</span>
+                            </a>
+                          </li>
+                        </ul>
+                      </nav>
+                </div>
+                  
+
+                    
+                
+            </div>
+
+
+        </section>
+        
+
+        
+    </main>     
+
+    <!-- --------------------------------------------------------------------------Footer------------------------------------------------------------------- -->
+    <footer>
+
+        <hr class="linea-separacion">
+
+        <div class="container mt-5">
+
+            <ul class="d-flex justify-content-center align-items-center flex-wrap Politicasp">
+
+                <li class="FooterList"><a href="#" class="text-white text-decoration-none">Politicas de Devoluciones</a>
+                </li>
+                <li class="FooterList"><a href="#" class="text-white text-decoration-none">Políticas de Privacidad</a>
+                </li>
+                <li class="FooterList"><a href="#" class="text-white text-decoration-none">Envío y Devoluciones</a></li>
+                <li class="FooterList"><a href="#" class="text-white text-decoration-none">Política de reembolso</a>
+                </li>
+                <li class="FooterList"><a href="#" class="text-white text-decoration-none">Avisos Legales</a></li>
+                <li class="FooterList"><a href="#" class="text-white text-decoration-none">Términos y Condiciones
+                        Generales</a></li>
+                <li class="FooterList"><a href="#" class="text-white text-decoration-none">Testimonios AlegriArt</a>
+                </li>
+                <li class="FooterList"><a href="#" class="text-white text-decoration-none">Preguntas Frecuentes</a></li>
+                <li class="FooterList"><a href="#" class="text-white text-decoration-none">Configuración de Cookies</a>
+                </li>
+
+            </ul>
+
+        </div>
+
+
+        <hr class="linea-separacion">
+
+
+        <div class="container d-flex justify-content-center mb-5 mt-2">
+
+            <ul class="row">
+
+                <div class="col-3 px-5">
+                    <li class="FooterList "><a href="https://instagram.com/alegri.art?igshid=NGVhN2U2NjQ0Yg=="><i
+                                class="fa-brands fa-instagram fs-2" style="color: #e8d066;"></i></a></i>
+                </div>
+
+                <div class="col-3 px-5">
+                    <li class="FooterList "><a href="#"><i class="fa-brands fa-youtube fs-2"
+                                style="color: #e8d066;"></i></i></a></li>
+                </div>
+
+                <div class="col-3 px-5">
+                    <li class="FooterList "><a href="#"><i class="fa-brands fa-facebook fs-2"
+                                style="color: #e8d066;"></i></i></a></li>
+                </div>
+
+                <div class="col-3 px-5">
+                    <li class="FooterList "><a href="#"><i class="fa-solid fa-envelope fs-2"
+                                style="color: #e8d066;"></i></i></a></li>
+                </div>
+
+        </div>
+
+        </div>
+
+    </footer>
+    <!-- -------------------------------------------------------------------------Scripts------------------------------------------------------------------- -->
+    <script src="../js/code.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="../js/detalle.js"></script>
+</body>
+
+</html>

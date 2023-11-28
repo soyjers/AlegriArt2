@@ -1,0 +1,442 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AlegriArt.com</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="../CSS/stilo.css">
+
+</head>
+
+<body class="bg-black">
+  <!-- Barra de navegacion-->
+
+  <nav class="navbar navbar-expand-lg bg-color-nav">
+    <div>
+      <button class=" icon-style paleta align-i">
+        <i class="fa-solid fa-palette"></i>
+      </button>
+    </div>
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a href="#"><button type="button" class="btn btn-outline-secondary">Inicio</button></a>
+          </li>
+          <li class="nav-item dropdown btn-outline-secondary">
+            <a class="nav-link dropdown-toggle btn color-texto-nav" href="#" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Categorias
+            </a>
+            <ul class="dropdown-menu bg-col bg-color-nav">
+              <li><a class="dropdown-item ddcolor btn btn-outline-secondary" href="#">Animales</a>
+              </li>
+              <li><a class="dropdown-item ddcolor btn btn-outline-secondary" href="#">Abstractos</a></li>
+              <li><a class="dropdown-item ddcolor btn btn-outline-secondary" href="#">Flores y
+                  Naturaleza</a></li>
+              <li><a class="dropdown-item ddcolor btn btn-outline-secondary" href="#">Arte Religioso</a>
+              </li>
+              <li><a class="dropdown-item ddcolor btn btn-outline-secondary" href="#">Lienzografias</a>
+              </li>
+              <li><a class="dropdown-item ddcolor btn btn-outline-secondary" href="#">Obras Únicas</a>
+              </li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item ddcolor" href="#">Retoques Artísticos</a></li>
+            </ul>
+          </li>
+          <li class="nav-item d-none" id="cajaBuscador">
+            <div class="input-group mb-3">
+              <span class="input-group-text" id="basic-addon1"><i class="fa-solid fa-magnifying-glass"></i></span>
+              <input type="text" class="form-control" placeholder="Username" aria-label="Username"
+                aria-describedby="basic-addon1" style="width: 700px;">
+            <!--buscador interno-->
+            <div class="input-group mb-0">
+              <span class="input-group-text radio-caja bg-var pbi" id="basic-addon1">
+                <i class="fa-solid fa-magnifying-glass text-center" id="nav-color-item"></i></i>
+                <!-- icono lupa interna-->
+              </span>
+              <input type="text" class="form-control border border-warning-subtle" placeholder="busca en nuestra tienda"
+                aria-label="Username" aria-describedby="basic-addon1" style="width: 500px;">
+            </div>
+          </li>
+        </ul>
+
+        <!--Iconos barra-->
+        <div class="d-flex">
+
+          <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample"
+            aria-labelledby="offcanvasExampleLabel">
+            <div class="dropdown mt-3">
+              <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                <i class="fa-solid fa-user-tie dropdown-item-text modal-dialog modal-dialog-centered icon-style"></i>
+                <!--icono usuario-->
+              </button>
+              <ul class="dropdown-menu bg-black ddcolor bg-color-nav ">
+                <li><a class="dropdown-item ddcolor" href="#">Usuario</a></li>
+                <li><a class="dropdown-item ddcolor" href="#">Administrador</a></li>
+            </div>
+          </div>
+        </div>
+        <div>
+          <button class="icon-style" type="button" id="btnLupa" data-vista="no">
+            <i class="fa-solid fa-magnifying-glass"></i></i> <!--lupa-->
+          </button>
+        </div>
+        <div>
+          <button class="icon-style position-relative">
+            <i class="fa-solid fa-heart"></i></i> <!--favoritos-->
+            <span
+              class="position-absolute top-40 start-90 translate-middle p-1 bg-danger border border-light rounded-circle">
+              <span class="visually-hidden">New alerts</span>
+            </span>
+          </button>
+        </div>
+        <div>
+          <button class="icon-style">
+            <i class="fa-solid fa-cart-arrow-down"></i> <!--carrito de compras-->
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </nav>
+
+  <main id="bodyDiv">
+
+    <!-- ----------------------------------------------------------------------Slider--------------------------------------------------------------------- -->
+    <div id="carouselExampleDark" class="carousel carousel-dark slide">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="10000">
+          <img
+            src="https://www.singulart.com/images-sh/eyJidWNrZXQiOiJzaW5ndWxhcnQtd2Vic2l0ZS1wcm9kLWFzc2V0cyIsImtleSI6ImFzc2V0c1wvYnVpbGRcL2ltYWdlc1wvcGFnZXNcL2hvbWVwYWdlXC9ob21lcGFnZS1jYXJvdXNlbC1zbGlkZXMtb25lLXllYXItcG9saWN5LWRlc2t0b3AuM2Q5ZWU1MDIuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxOTIwLCJoZWlnaHQiOjQwMCwiZml0IjoiY292ZXIiLCJiYWNrZ3JvdW5kIjpudWxsfSwidG9Gb3JtYXQiOiJ3ZWJwIn19?signature=dc84cdaa2f43f9bc938a29d7c6d1521f1624e6a3cf82d233571a914505bac35e"
+            class="d-block w-100 " alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h1>AlegriArt</h1>
+            <p>Colores que despirtan recuerdo!</p>
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="2000">
+          <img
+            src="https://www.singulart.com/images-sh/eyJidWNrZXQiOiJzaW5ndWxhcnQtd2Vic2l0ZS1wcm9kLWFzc2V0cyIsImtleSI6ImFzc2V0c1wvYnVpbGRcL2ltYWdlc1wvcGFnZXNcL2hvbWVwYWdlXC9ob21lcGFnZS1jYXJvdXNlbC1zbGlkZXMta3NwLWRlc2t0b3AuYjhjODZiY2IuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxOTIwLCJoZWlnaHQiOjQwMCwiZml0IjoiY292ZXIiLCJiYWNrZ3JvdW5kIjpudWxsfSwidG9Gb3JtYXQiOiJ3ZWJwIn19?signature=d9e1ee3f8e30b4ba0ca9e0dd615850b04b954f1312726a2503d7af75fdfaf2b4"
+            class="d-block w-100 " alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h1>AlegriArt</h1>
+            <p>Colores que despirtan recuerdo!</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            src="https://www.singulart.com/images-sh/eyJidWNrZXQiOiJzaW5ndWxhcnQtd2Vic2l0ZS1wcm9kLWFzc2V0cyIsImtleSI6ImFzc2V0c1wvYnVpbGRcL2ltYWdlc1wvcGFnZXNcL2hvbWVwYWdlXC9ob21lcGFnZS1jYXJvdXNlbC1zbGlkZXMtZGlzY292ZXItZGVza3RvcC42MzdkZGEwNi5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjE5MjAsImhlaWdodCI6NDAwLCJmaXQiOiJjb3ZlciIsImJhY2tncm91bmQiOm51bGx9LCJ0b0Zvcm1hdCI6IndlYnAifX0=?signature=d9f5965ca84949c3e62ac972e0ae438528b351ee14831812653b3474dc269d45"
+            class="d-block w-100 " alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h1>AlegriArt</h1>
+            <p>Colores que despirtan recuerdo!</p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <div class="caro my-5">
+      <div class="bga">
+        <h2 class="text-white m-0 text-center">Nueva Coleccion</h2>
+      </div>
+      <div class="blob"></div>
+    </div>
+
+
+    <div class="container mb-5">
+      <div class="row">
+        <div class="d-flex justify-content-center col-md-4 my-3">
+          <a class="text-decoration-none" href="#">
+            <div class="grillas bg-black ">
+              <div class="grillas-image rounded-3"><img class="w-100 h-100 rounded-3" src="/img/lienzo.webp" alt="">
+              </div>
+              <p class="grillas-title">Card title</p>
+              <p class="grillas-body text-white">
+                cualquier espacio con este hermoso Cuadro decorativo. Lleno de color, vida, iluminación, relieve y
+                textura aumenta la estética en tu hogar de forma inmediata.
+              </p>
+              <p class="pieGrillas mt-1">Artista <span class="by-name">Sebastian Gaviria</span> on <span
+                  class="date">25/05/23</span></p>
+            </div>
+          </a>
+        </div>
+        <div class="d-flex justify-content-center col-md-4 my-3">
+          <a class="text-decoration-none" href="#">
+            <div class="grillas bg-black">
+              <div class="grillas-image rounded-3"><img class="w-100 h-100 rounded-3" src="/img/img1.webp" alt=""></div>
+              <p class="grillas-title">Card title</p>
+              <p class="grillas-body text-white ">
+                Cualquier espacio con este hermoso Cuadro decorativo. Lleno de color, vida, iluminación, relieve y
+                textura, aumenta la estética en tu hogar de forma inmediata.
+              </p>
+              <p class="pieGrillas mt-1">Artista <span class="by-name">Sebastian Gaviria</span> on <span
+                  class="date">25/05/23</span></p>
+            </div>
+          </a>
+        </div>
+        <div class="d-flex justify-content-center col-md-4 my-3">
+          <a class="text-decoration-none" href="#">
+            <div class="grillas bg-black">
+              <div class="grillas-image rounded-3"><img class="w-100 h-100 rounded-3" src="/img/obras.webp" alt="">
+              </div>
+              <p class="grillas-title">Card title</p>
+              <p class="grillas-body text-white">
+                Cualquier espacio con este hermoso Cuadro Decorativo. Lleno de color, vida, iluminación, relieve y
+                textura aumenta la estética en tu hogar de forma inmediata.
+              </p>
+              <p class="pieGrillas mt-1">Artista <span class="by-name">Sebastian Gaviria</span> on <span
+                  class="date">25/05/23</span></p>
+            </div>
+          </a>
+        </div>
+        <div class="d-flex justify-content-center col-md-4 my-3">
+          <a class="text-decoration-none" href="#">
+            <div class="grillas bg-black">
+              <div class="grillas-image rounded-3"><img class="w-100 h-100 rounded-3" src="/img/obras1.webp" alt="">
+              </div>
+              <p class="grillas-title">Card title</p>
+              <p class="grillas-body text-white">
+                Cualquier espacio con este hermoso Cuadro Decorativo. Lleno de color, vida, iluminación, relieve y
+                textura aumenta la estética en tu hogar de forma inmediata.
+              </p>
+              <p class="pieGrillas mt-1">Artista <span class="by-name">Sebastian Gaviria</span> on <span
+                  class="date">25/05/23</span></p>
+            </div>
+          </a>
+        </div>
+        <div class="d-flex justify-content-center col-md-4 my-3">
+          <a class="text-decoration-none" href="#">
+            <div class="grillas bg-black">
+              <div class="grillas-image rounded-3"><img class="w-100 h-100 rounded-3" src="/img/grilla1.webp" alt="">
+              </div>
+              <p class="grillas-title">Card title</p>
+              <p class="grillas-body text-white">
+                Cualquier espacio con este hermoso Cuadro Decorativo. Lleno de color, vida, iluminación, relieve y
+                textura aumenta la estética en tu hogar de forma inmediata.
+              </p>
+              <p class="pieGrillas mt-1">Artista <span class="by-name">Sebastian Gaviria</span> on <span
+                  class="date">25/05/23</span></p>
+            </div>
+          </a>
+        </div>
+        <div class="d-flex justify-content-center col-md-4 my-3">
+          <a class="text-decoration-none" href="#">
+            <div class="grillas bg-black">
+              <div class="grillas-image"><img class="w-100 h-100 rounded-3" src="/img/img1.webp" alt=""></div>
+              <p class="grillas-title">Card title</p>
+              <p class="grillas-body text-white">
+                Cualquier espacio con este hermoso Cuadro Decorativo. Lleno de color, vida, iluminación, relieve y
+                textura aumenta la estética en tu hogar de forma inmediata.
+              </p>
+              <p class="pieGrillas mt-1">Artista <span class="by-name">Sebastian Gaviria</span> on <span
+                  class="date">25/05/23</span></p>
+            </div>
+          </a>
+        </div>
+        <div class="d-flex justify-content-center col-md-4 my-3">
+          <a class="text-decoration-none" href="">
+            <div class="grillas bg-black">
+              <div class="grillas-image rounded-3"><img class="w-100 h-100 rounded-3" src="/img/grilla2.webp" alt="">
+              </div>
+              <p class="grillas-title">Card title</p>
+              <p class="grillas-body text-white">
+                Cualquier espacio con este hermoso Cuadro Decorativo. Lleno de color, vida, iluminación, relieve y
+                textura aumenta la estética en tu hogar de forma inmediata.
+              </p>
+              <p class="pieGrillas mt-1">Artista <span class="by-name">Sebastian Gaviria</span> on <span
+                  class="date">25/05/23</span></p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="caro my-5">
+      <div class="bga">
+        <h2 class="text-white m-0 text-center">Catalogo De Productos</h2>
+      </div>
+      <div class="blob"></div>
+    </div>
+
+
+    <section class="container my-5">
+      <div class="row">
+        <div class="d-flex justify-content-center col-md-3 my-3">
+          <a class=" text-decoration-none" href="https://google.com">
+            <div class="card secciones animales bg-black" style="width: 18rem;">
+              <div class="card-body W-100 d-flex justify-content-center align-items-center">
+                <H6 class="text-white fw-light fs-4">ANIMALES</H6>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="d-flex justify-content-center col-md-3 my-3">
+          <a class=" text-decoration-none" href="https://google.com">
+            <div class="card secciones abstractos bg-black" style="width: 18rem;">
+              <div class="card-body W-100 d-flex justify-content-center align-items-center">
+                <H6 class="text-white fw-light fs-4">ABSTRACTOS</H6>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="d-flex justify-content-center col-md-3 my-3">
+          <a class=" text-decoration-none" href="https://google.com">
+            <div class="card secciones flores bg-black" style="width: 18rem;">
+              <div class="card-body W-100 d-flex justify-content-center align-items-center">
+                <H6 class="text-white fw-light fs-4">FLORES Y NATURALEZA</H6>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="d-flex justify-content-center col-md-3 my-3">
+          <a class=" text-decoration-none" href="https://google.com">
+            <div class="card secciones tripticos bg-black" style="width: 18rem;">
+              <div class="card-body W-100 d-flex justify-content-center align-items-center">
+                <H6 class="text-white fw-light fs-4">TRIPTICOS</H6>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="d-flex justify-content-center col-md-3 my-3">
+          <a class=" text-decoration-none" href="https://google.com">
+            <div class="card secciones tematicos bg-black" style="width: 18rem;">
+              <div class="card-body W-100 d-flex justify-content-center align-items-center">
+                <H6 class="text-white fw-light fs-4">TEMATICOS</H6>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="d-flex justify-content-center col-md-3 my-3">
+          <a class=" text-decoration-none" href="https://google.com">
+            <div class="card secciones religiosos bg-black" style="width: 18rem;">
+              <div class="card-body W-100 d-flex justify-content-center align-items-center">
+                <H6 class="text-white fw-light fs-4">RELIGIOSOS</H6>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="d-flex justify-content-center col-md-3 my-3">
+          <a class=" text-decoration-none" href="https://google.com">
+            <div class="card secciones lienzo bg-black" style="width: 18rem;">
+              <div class="card-body W-100 d-flex justify-content-center align-items-center">
+                <H6 class="text-white fw-light fs-4">LIENZOGRAFIA</H6>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="d-flex justify-content-center col-md-3 my-3">
+          <a class=" text-decoration-none" href="https://google.com">
+            <div class="card secciones obras bg-black" style="width: 18rem;">
+              <div class="card-body W-100 d-flex justify-content-center align-items-center">
+                <H6 class="text-white fw-light fs-4">OBRAS UNICAS </H6>
+              </div>
+            </div>
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <footer>
+
+      <hr class="linea-separacion">
+
+      <div class="container mt-5">
+
+        <ul class="d-flex justify-content-center align-items-center flex-wrap Politicasp">
+
+          <li class="FooterList"><a href="#" class="text-white text-decoration-none">Politicas de Devoluciones</a></li>
+          <li class="FooterList"><a href="#" class="text-white text-decoration-none">Políticas de Privacidad</a></li>
+          <li class="FooterList"><a href="#" class="text-white text-decoration-none">Envío y Devoluciones</a></li>
+          <li class="FooterList"><a href="#" class="text-white text-decoration-none">Política de reembolso</a></li>
+          <li class="FooterList"><a href="#" class="text-white text-decoration-none">Avisos Legales</a></li>
+          <li class="FooterList"><a href="#" class="text-white text-decoration-none">Términos y Condiciones
+              Generales</a></li>
+          <li class="FooterList"><a href="#" class="text-white text-decoration-none">Testimonios AlegriArt</a></li>
+          <li class="FooterList"><a href="#" class="text-white text-decoration-none">Preguntas Frecuentes</a></li>
+          <li class="FooterList"><a href="#" class="text-white text-decoration-none">Configuración de Cookies</a></li>
+
+        </ul>
+
+      </div>
+
+
+      <hr class="linea-separacion">
+
+
+      <div class="container d-flex justify-content-center mb-5 mt-2">
+
+        <ul class="row">
+
+          <div class="col-3 px-5">
+            <li class="FooterList "><a href="https://instagram.com/alegri.art?igshid=NGVhN2U2NjQ0Yg=="><i
+                  class="fa-brands fa-instagram fs-2" style="color: #e8d066;"></i></a></i>
+          </div>
+
+          <div class="col-3 px-5">
+            <li class="FooterList "><a href="#"><i class="fa-brands fa-youtube fs-2"
+                  style="color: #e8d066;"></i></i></a></li>
+          </div>
+
+          <div class="col-3 px-5">
+            <li class="FooterList "><a href="#"><i class="fa-brands fa-facebook fs-2"
+                  style="color: #e8d066;"></i></i></a></li>
+          </div>
+
+          <div class="col-3 px-5">
+            <li class="FooterList "><a href="#"><i class="fa-solid fa-envelope fs-2"
+                  style="color: #e8d066;"></i></i></a></li>
+          </div>
+
+      </div>
+
+      </div>
+
+    </footer>
+
+
+
+  </main>
+
+  <script src="../js/code.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>

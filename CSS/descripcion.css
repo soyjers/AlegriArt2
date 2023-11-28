@@ -1,0 +1,257 @@
+:root {
+    --color-dorado: #e8d066;
+    --doradogeneral: #e8d066;
+}
+
+
+/* ------------SliderInf------------ */
+
+.barInf {
+    color: var(--doradogeneral);
+    font-size: larger;
+}
+
+/* -----------DetalleImagenes---------- */
+
+.cajaImagenesP img {
+    width: 100px;
+    transition: .4s;
+}
+
+.imagenDetalle {
+    width: 540px;
+    height: 540px;
+    border-radius: 5px;
+}
+
+.cajaImagenesP img:hover {
+    scale: 1.1;
+}
+
+
+/* -----------Detalles Producto------------ */
+
+.Detalles {
+    width: 500px;
+    height: 600px;
+    border-radius: 5px;
+    background: #212121;
+    box-shadow:1px 1px 5px #F8F3B8,
+                -1px -1px 5px #e8d066;
+    
+   }
+
+/* -----------PRESENTACION------------- */
+
+/* .checkbox-wrapper-16 *,
+  .checkbox-wrapper-16 *:after,
+  .checkbox-wrapper-16 *:before {
+  box-sizing: border-box;
+}
+
+.checkbox-wrapper-16 .checkbox-input {
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.checkbox-wrapper-16 .checkbox-input:checked + .checkbox-tile:before {
+  transform: scale(1);
+  opacity: 1;
+  background-color: #2260ff;
+  border-color: #2260ff;
+}
+
+.checkbox-wrapper-16 .checkbox-input:focus + .checkbox-tile {
+  border-color: #2260ff;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1), 0 0 0 4px #b5c9fc;
+}
+
+.checkbox-wrapper-16 .checkbox-tile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 7rem;
+  min-height: 7rem;
+  border-radius: 0.5rem;
+  border: 2px solid #b5bfd9;
+  background-size: cover;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  transition: 0.15s ease;
+  cursor: pointer;
+  position: relative;
+}
+.cero {
+  background-image: url(/img/enrrollado.jfif);
+  background-size: cover;
+}
+.uno  {
+background-image: url(/img/listo-para-colgar.avif);
+background-size: cover;
+}
+
+.checkbox-wrapper-16 .checkbox-tile:before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 1.25rem;
+  height: 1.25rem;
+  border: 2px solid #b5bfd9;
+  background-color: #fff;
+  border-radius: 50%;
+  top: 0.25rem;
+  left: 0.25rem;
+  opacity: 0;
+  transform: scale(0);
+  transition: 0.25s ease;
+  background-image: url("");
+  background-size: 12px;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+} */
+
+.xx {
+  width: 112px;
+  height: 112px;
+  border-radius: 5px;
+
+}
+.yy {
+padding: 3px;
+}
+h6 {
+  font-size: 14px;
+}
+h6:hover {
+  scale: 1.01;
+  transition: 1s;
+  display: block;
+}
+
+
+
+
+   /* --Estrellas--- */
+   
+   .rating {
+    display: inline-block;
+  }
+  
+  .rating input {
+    display: none;
+  }
+  
+  .rating label {
+    float: right;
+    cursor: pointer;
+    color: #ccc;
+    transition: color 0.3s;
+  }
+  
+  .rating label:before {
+    content: '\2605';
+    font-size: 30px;
+  }
+  
+  .rating input:checked ~ label,
+  .rating label:hover,
+  .rating label:hover ~ label {
+    color: #6f00ff;
+    transition: color 0.3s;
+  }
+  
+  /* ----Corazon-------------- */
+  .x {
+    transform: translate(440px );
+    
+  
+  }
+
+  .Corazon input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+
+  }
+  
+  
+  .Corazon {
+    display: block;
+    position: relative;
+    cursor: pointer;
+    font-size: 20px;
+    user-select: none;
+    transition: 100ms;
+    height: 41px;
+    width: 41px;
+  }
+  
+  .checkmarkCorazon {
+    top: 0;
+    left: 0;
+    height: 2em;
+    width: 2em;
+    transition: 100ms;
+    animation: dislike_effect 400ms ease;
+  }
+  
+  .Corazon input:checked ~ .checkmarkCorazon path {
+    fill: #FF5353;
+    stroke-width: 0;
+  }
+  
+  .Corazon input:checked ~ .checkmarkCorazon {
+    animation: like_effect 400ms ease;
+  }
+  
+  .Corazon:hover {
+    transform: scale(1.05);
+    
+    transform: translate(440px );
+      
+    
+    
+  }
+  
+  @keyframes like_effect {
+    0% {
+      transform: scale(0);
+    }
+  
+    50% {
+      transform: scale(1.2);
+    }
+  
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  @keyframes dislike_effect {
+    0% {
+      transform: scale(0);
+    }
+  
+    50% {
+      transform: scale(1.2);
+    }
+  
+    100% {
+      transform: scale(1);
+    }
+  }
+
+/* ----------------------grilla------------- */
+
+
+  .cuerpo {
+    height: 20px;
+  color: white;
+  }
+  
