@@ -15,9 +15,8 @@
 </head>
 
 <body class="bg-black">
-  <!-- Barra de navegacion-->
-
-  <nav class="navbar navbar-expand-lg bg-color-nav">
+  <!-- --------------------------------------------------------------------------Navbar------------------------------------------------------------------- -->
+  <nav class="navbar navbar-expand-lg bg-color-nav sticky-top">
     <div>
       <button class=" icon-style paleta align-i">
         <i class="fa-solid fa-palette"></i>
@@ -33,22 +32,22 @@
           <li class="nav-item">
             <a href="#"><button type="button" class="btn btn-outline-secondary">Inicio</button></a>
           </li>
-          <li class="nav-item dropdown btn-outline-secondary">
-            <a class="nav-link dropdown-toggle btn color-texto-nav" href="#" role="button" data-bs-toggle="dropdown"
-              aria-expanded="false">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-white btn btn-outline-secondary" href="#" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
               Categorias
             </a>
-            <ul class="dropdown-menu bg-col bg-color-nav">
-              <li><a class="dropdown-item ddcolor btn btn-outline-secondary" href="#">Animales</a>
+            <ul class="dropdown-menu bg-black">
+              <li><a class="dropdown-item ddcolor btn btn-outline-secondary" href="/HTML/listaDeProductos.html">Animales</a>
               </li>
-              <li><a class="dropdown-item ddcolor btn btn-outline-secondary" href="#">Abstractos</a></li>
-              <li><a class="dropdown-item ddcolor btn btn-outline-secondary" href="#">Flores y
+              <li><a class="dropdown-item ddcolor btn btn-outline-secondary" href="/HTML/listaDeProductos.html">Abstractos</a></li>
+              <li><a class="dropdown-item ddcolor btn btn-outline-secondary" href="/HTML/listaDeProductos.html">Flores y
                   Naturaleza</a></li>
-              <li><a class="dropdown-item ddcolor btn btn-outline-secondary" href="#">Arte Religioso</a>
+              <li><a class="dropdown-item ddcolor btn btn-outline-secondary" href="/HTML/listaDeProductos.html">Arte Religioso</a>
               </li>
-              <li><a class="dropdown-item ddcolor btn btn-outline-secondary" href="#">Lienzografias</a>
+              <li><a class="dropdown-item ddcolor btn btn-outline-secondary" href="/HTML/listaDeProductos.html">Lienzografias</a>
               </li>
-              <li><a class="dropdown-item ddcolor btn btn-outline-secondary" href="#">Obras Únicas</a>
+              <li><a class="dropdown-item ddcolor btn btn-outline-secondary" href="/HTML/listaDeProductos.html">Obras Únicas</a>
               </li>
               <li>
                 <hr class="dropdown-divider">
@@ -58,64 +57,49 @@
           </li>
           <li class="nav-item d-none" id="cajaBuscador">
             <div class="input-group mb-3">
-              <span class="input-group-text" id="basic-addon1"><i class="fa-solid fa-magnifying-glass"></i></span>
+              <span class="input-group-text" id="basic-addon1">@</span>
               <input type="text" class="form-control" placeholder="Username" aria-label="Username"
                 aria-describedby="basic-addon1" style="width: 700px;">
-            <!--buscador interno-->
-            <div class="input-group mb-0">
-              <span class="input-group-text radio-caja bg-var pbi" id="basic-addon1">
-                <i class="fa-solid fa-magnifying-glass text-center" id="nav-color-item"></i></i>
-                <!-- icono lupa interna-->
-              </span>
-              <input type="text" class="form-control border border-warning-subtle" placeholder="busca en nuestra tienda"
-                aria-label="Username" aria-describedby="basic-addon1" style="width: 500px;">
             </div>
           </li>
         </ul>
 
-        <!--Iconos barra-->
+        <!--Iconos-->
         <div class="d-flex">
 
-          <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample"
-            aria-labelledby="offcanvasExampleLabel">
-            <div class="dropdown mt-3">
-              <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown">
-                <i class="fa-solid fa-user-tie dropdown-item-text modal-dialog modal-dialog-centered icon-style"></i>
-                <!--icono usuario-->
-              </button>
-              <ul class="dropdown-menu bg-black ddcolor bg-color-nav ">
-                <li><a class="dropdown-item ddcolor" href="#">Usuario</a></li>
-                <li><a class="dropdown-item ddcolor" href="#">Administrador</a></li>
-            </div>
+          <div>
+            <button class="icon-style">
+              <i class="fa-solid fa-user-tie"></i> <!--user-->
+            </button>
+          </div>
+          <div>
+            <button class="icon-style" type="button" id="btnLupa" data-vista="no">
+              <i class="fa-solid fa-magnifying-glass"></i></i> <!--lupa-->
+            </button>
+          </div>
+          <div>
+            <button class="icon-style position-relative">
+              <i class="fa-solid fa-heart"></i></i> <!--favoritos-->
+              <span
+                class="position-absolute top-40 start-90 translate-middle p-1 bg-danger border border-light rounded-circle">
+                <span class="visually-hidden">New alerts</span>
+              </span>
+            </button>
+          </div>
+          <div>
+            <button class="icon-style">
+              <i class="fa-solid fa-cart-arrow-down"></i> <!--carrito de compras-->
+            </button>
           </div>
         </div>
-        <div>
-          <button class="icon-style" type="button" id="btnLupa" data-vista="no">
-            <i class="fa-solid fa-magnifying-glass"></i></i> <!--lupa-->
-          </button>
-        </div>
-        <div>
-          <button class="icon-style position-relative">
-            <i class="fa-solid fa-heart"></i></i> <!--favoritos-->
-            <span
-              class="position-absolute top-40 start-90 translate-middle p-1 bg-danger border border-light rounded-circle">
-              <span class="visually-hidden">New alerts</span>
-            </span>
-          </button>
-        </div>
-        <div>
-          <button class="icon-style">
-            <i class="fa-solid fa-cart-arrow-down"></i> <!--carrito de compras-->
-          </button>
-        </div>
-      </div>
 
-    </div>
+      </div>
   </nav>
+
 
   <main id="bodyDiv">
 
-    <!-- ----------------------------------------------------------------------Slider--------------------------------------------------------------------- -->
+    <!-- -----------------------------------------------------------------------Slider--------------------------------------------------------------------- -->
     <div id="carouselExampleDark" class="carousel carousel-dark slide">
       <div class="carousel-indicators">
         <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
@@ -161,19 +145,18 @@
         <span class="visually-hidden">Next</span>
       </button>
     </div>
-
+    <!-- -----------------------------------------------------------------------Seccion 1------------------------------------------------------------------ -->
     <div class="caro my-5">
       <div class="bga">
         <h2 class="text-white m-0 text-center">Nueva Coleccion</h2>
       </div>
       <div class="blob"></div>
     </div>
-
-
+    <!-- -----------------------------------------------------------------------Grilla 1------------------------------------------------------------------- -->
     <div class="container mb-5">
       <div class="row">
-        <div class="d-flex justify-content-center col-md-4 my-3">
-          <a class="text-decoration-none" href="#">
+        <div class="d-flex justify-content-center col-12 col-md-6 col-lg-4 my-3 ">
+          <a class="text-decoration-none" href="/HTML/descripcion.html">
             <div class="grillas bg-black ">
               <div class="grillas-image rounded-3"><img class="w-100 h-100 rounded-3" src="/img/lienzo.webp" alt="">
               </div>
@@ -187,22 +170,9 @@
             </div>
           </a>
         </div>
-        <div class="d-flex justify-content-center col-md-4 my-3">
-          <a class="text-decoration-none" href="#">
-            <div class="grillas bg-black">
-              <div class="grillas-image rounded-3"><img class="w-100 h-100 rounded-3" src="/img/img1.webp" alt=""></div>
-              <p class="grillas-title">Card title</p>
-              <p class="grillas-body text-white ">
-                Cualquier espacio con este hermoso Cuadro decorativo. Lleno de color, vida, iluminación, relieve y
-                textura, aumenta la estética en tu hogar de forma inmediata.
-              </p>
-              <p class="pieGrillas mt-1">Artista <span class="by-name">Sebastian Gaviria</span> on <span
-                  class="date">25/05/23</span></p>
-            </div>
-          </a>
-        </div>
-        <div class="d-flex justify-content-center col-md-4 my-3">
-          <a class="text-decoration-none" href="#">
+
+        <div class="d-flex justify-content-center col-12 col-md-6 col-lg-4 my-3">
+          <a class="text-decoration-none" href="/HTML/descripcion.html">
             <div class="grillas bg-black">
               <div class="grillas-image rounded-3"><img class="w-100 h-100 rounded-3" src="/img/obras.webp" alt="">
               </div>
@@ -216,8 +186,9 @@
             </div>
           </a>
         </div>
-        <div class="d-flex justify-content-center col-md-4 my-3">
-          <a class="text-decoration-none" href="#">
+
+        <div class="d-flex justify-content-center col-12 col-md-6 col-lg-4 my-3">
+          <a class="text-decoration-none" href="/HTML/descripcion.html">
             <div class="grillas bg-black">
               <div class="grillas-image rounded-3"><img class="w-100 h-100 rounded-3" src="/img/obras1.webp" alt="">
               </div>
@@ -231,8 +202,9 @@
             </div>
           </a>
         </div>
-        <div class="d-flex justify-content-center col-md-4 my-3">
-          <a class="text-decoration-none" href="#">
+
+        <div class="d-flex justify-content-center col-12 col-md-6 col-lg-4 my-3">
+          <a class="text-decoration-none" href="/HTML/descripcion.html">
             <div class="grillas bg-black">
               <div class="grillas-image rounded-3"><img class="w-100 h-100 rounded-3" src="/img/grilla1.webp" alt="">
               </div>
@@ -246,8 +218,9 @@
             </div>
           </a>
         </div>
-        <div class="d-flex justify-content-center col-md-4 my-3">
-          <a class="text-decoration-none" href="#">
+
+        <div class="d-flex justify-content-center col-12 col-md-6 col-lg-4 my-3">
+          <a class="text-decoration-none" href="/HTML/descripcion.html">
             <div class="grillas bg-black">
               <div class="grillas-image"><img class="w-100 h-100 rounded-3" src="/img/img1.webp" alt=""></div>
               <p class="grillas-title">Card title</p>
@@ -260,8 +233,9 @@
             </div>
           </a>
         </div>
-        <div class="d-flex justify-content-center col-md-4 my-3">
-          <a class="text-decoration-none" href="">
+        
+        <div class="d-flex justify-content-center col-12 col-md-6 col-lg-4 my-3">
+          <a class="text-decoration-none" href="/HTML/descripcion.html">
             <div class="grillas bg-black">
               <div class="grillas-image rounded-3"><img class="w-100 h-100 rounded-3" src="/img/grilla2.webp" alt="">
               </div>
@@ -277,19 +251,18 @@
         </div>
       </div>
     </div>
-
+    <!-- -----------------------------------------------------------------------Seccion 2----------------------------------------------------------------- -->
     <div class="caro my-5">
       <div class="bga">
         <h2 class="text-white m-0 text-center">Catalogo De Productos</h2>
       </div>
       <div class="blob"></div>
     </div>
-
-
+    <!-- ------------------------------------------------------------------------Grilla 2------------------------------------------------------------------ -->
     <section class="container my-5">
       <div class="row">
-        <div class="d-flex justify-content-center col-md-3 my-3">
-          <a class=" text-decoration-none" href="https://google.com">
+        <div class="d-flex justify-content-center col-12 col-md-6 col-lg-4 col-xl-3 my-3">
+          <a class=" text-decoration-none" href="/HTML/listaDeProductos.html">
             <div class="card secciones animales bg-black" style="width: 18rem;">
               <div class="card-body W-100 d-flex justify-content-center align-items-center">
                 <H6 class="text-white fw-light fs-4">ANIMALES</H6>
@@ -298,8 +271,8 @@
           </a>
         </div>
 
-        <div class="d-flex justify-content-center col-md-3 my-3">
-          <a class=" text-decoration-none" href="https://google.com">
+        <div class="d-flex justify-content-center col-12 col-md-6 col-lg-4 col-xl-3 my-3">
+          <a class=" text-decoration-none" href="/HTML/listaDeProductos.html">
             <div class="card secciones abstractos bg-black" style="width: 18rem;">
               <div class="card-body W-100 d-flex justify-content-center align-items-center">
                 <H6 class="text-white fw-light fs-4">ABSTRACTOS</H6>
@@ -308,8 +281,8 @@
           </a>
         </div>
 
-        <div class="d-flex justify-content-center col-md-3 my-3">
-          <a class=" text-decoration-none" href="https://google.com">
+        <div class="d-flex justify-content-center col-12 col-md-6 col-lg-4 col-xl-3 my-3">
+          <a class=" text-decoration-none" href="/HTML/listaDeProductos.html">
             <div class="card secciones flores bg-black" style="width: 18rem;">
               <div class="card-body W-100 d-flex justify-content-center align-items-center">
                 <H6 class="text-white fw-light fs-4">FLORES Y NATURALEZA</H6>
@@ -318,8 +291,8 @@
           </a>
         </div>
 
-        <div class="d-flex justify-content-center col-md-3 my-3">
-          <a class=" text-decoration-none" href="https://google.com">
+        <div class="d-flex justify-content-center col-12 col-md-6 col-lg-4 col-xl-3 my-3">
+          <a class=" text-decoration-none" href="/HTML/listaDeProductos.html">
             <div class="card secciones tripticos bg-black" style="width: 18rem;">
               <div class="card-body W-100 d-flex justify-content-center align-items-center">
                 <H6 class="text-white fw-light fs-4">TRIPTICOS</H6>
@@ -328,8 +301,8 @@
           </a>
         </div>
 
-        <div class="d-flex justify-content-center col-md-3 my-3">
-          <a class=" text-decoration-none" href="https://google.com">
+        <div class="d-flex justify-content-center col-12 col-md-6 col-lg-4 col-xl-3 my-3">
+          <a class=" text-decoration-none" href="/HTML/listaDeProductos.html">
             <div class="card secciones tematicos bg-black" style="width: 18rem;">
               <div class="card-body W-100 d-flex justify-content-center align-items-center">
                 <H6 class="text-white fw-light fs-4">TEMATICOS</H6>
@@ -338,8 +311,8 @@
           </a>
         </div>
 
-        <div class="d-flex justify-content-center col-md-3 my-3">
-          <a class=" text-decoration-none" href="https://google.com">
+        <div class="d-flex justify-content-center col-12 col-md-6 col-lg-4 col-xl-3 my-3">
+          <a class=" text-decoration-none" href="/HTML/listaDeProductos.html">
             <div class="card secciones religiosos bg-black" style="width: 18rem;">
               <div class="card-body W-100 d-flex justify-content-center align-items-center">
                 <H6 class="text-white fw-light fs-4">RELIGIOSOS</H6>
@@ -348,8 +321,8 @@
           </a>
         </div>
 
-        <div class="d-flex justify-content-center col-md-3 my-3">
-          <a class=" text-decoration-none" href="https://google.com">
+        <div class="d-flex justify-content-center col-12 col-md-6 col-lg-4 col-xl-3 my-3">
+          <a class=" text-decoration-none" href="/HTML/listaDeProductos.html">
             <div class="card secciones lienzo bg-black" style="width: 18rem;">
               <div class="card-body W-100 d-flex justify-content-center align-items-center">
                 <H6 class="text-white fw-light fs-4">LIENZOGRAFIA</H6>
@@ -358,8 +331,8 @@
           </a>
         </div>
 
-        <div class="d-flex justify-content-center col-md-3 my-3">
-          <a class=" text-decoration-none" href="https://google.com">
+        <div class="d-flex justify-content-center col-12 col-md-6 col-lg-4 col-xl-3 my-3">
+          <a class=" text-decoration-none" href="/HTML/listaDeProductos.html">
             <div class="card secciones obras bg-black" style="width: 18rem;">
               <div class="card-body W-100 d-flex justify-content-center align-items-center">
                 <H6 class="text-white fw-light fs-4">OBRAS UNICAS </H6>
@@ -370,7 +343,7 @@
 
       </div>
     </section>
-
+    <!-- ------------------------------------------------------------------------Footer------------------------------------------------------------------- -->
     <footer>
 
       <hr class="linea-separacion">
@@ -430,8 +403,9 @@
 
 
 
-  </main>
 
+  </main>
+    <!-- ------------------------------------------------------------------------Scripts------------------------------------------------------------------- -->
   <script src="../js/code.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
