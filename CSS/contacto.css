@@ -1,4 +1,31 @@
+:root {
+    --color-blanco: #fff;
+    --color-dorado: #e8d066;
+    --doradogeneral: #e8d066;
+}
+
+/* --------------------------- */
+
 .fondo {
+
+
     background: rgb(0, 0, 0);
     background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(232, 208, 102, 1) 50%, rgba(255, 255, 255, 1) 100%);
+}
+
+.enviar {
+    background-color: var(--doradogeneral);
+}
+.enviar:hover {
+    background-color: var(--color-dorado);
+}
+
+.f {
+    border-radius: 50px;
+    background: #ffffff;
+    box-shadow: 5px 5px 20px #5f5050,
+                  -5px -5px 20px #474040;
+}
+.f:hover {
+    scale: 1.05;
 }
