@@ -9,8 +9,8 @@
 * {
     margin: 0;
     padding: 0;
-    
-    
+
+
 }
 
 .icon-style {
@@ -49,6 +49,10 @@ hr {
 
 }
 
+.BtnLupa {
+    background-color: #e8d066;
+}
+
 
 
 
@@ -73,8 +77,8 @@ hr {
 
 /* -------slider1-------- */
 .Slider1 {
-  width: 1903px;
-  height: 605px;
+    width: 1903px;
+    height: 605px;
 
 
 }
@@ -82,35 +86,43 @@ hr {
 
 /* ------segunda grilla----------- */
 .secciones {
-  margin: 0;
-  padding: 0;
-  background-size: cover;
-  height: 286px;
-  opacity: 0.9;
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+    height: 286px;
+    opacity: 0.9;
 }
+
 .tematicos {
-background-image: url(/img/Tematicos.webp);
+    background-image: url(/img/Tematicos.webp);
 }
+
 .religiosos {
-  background-image: url(/img/Religiosos.webp);
+    background-image: url(/img/Religiosos.webp);
 }
+
 .flores {
-  background-image: url(/img/flores.jpg);
+    background-image: url(/img/flores.jpg);
 }
+
 .abstractos {
-  background-image: url(/img/abstractos.webp);
+    background-image: url(/img/abstractos.webp);
 }
+
 .animales {
-  background-image: url(/img/Animales.webp);
+    background-image: url(/img/Animales.webp);
 }
+
 .tripticos {
-  background-image: url(/img/tripticos.webp);
+    background-image: url(/img/tripticos.webp);
 }
+
 .lienzo {
-  background-image: url(/img/lienzo1.webp);
+    background-image: url(/img/lienzo1.webp);
 }
+
 .obras {
-  background-image: url(/img/obras2.webp);
+    background-image: url(/img/obras2.webp);
 }
 
 
@@ -227,16 +239,16 @@ footer {
 /* ------------------- */
 
 .caro {
-  position: relative;
-  width: 1900px;
-  height: 50px;
-  border-radius: 15px;
-  z-index: -1;
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  /* justify-content: center; */
+    position: relative;
+    width: 1900px;
+    height: 50px;
+    border-radius: 15px;
+    z-index: -1;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
 }
 
 .bga {
@@ -293,16 +305,18 @@ footer {
 
 @media (max-width: 1000px) {
     #carouselExampleDark {
-    display:none}
+        display: none
+    }
 }
 
 @media (max-width: 1200px) {
     .bga {
-    width: 98vw;
+        width: 98vw;
 
     }
+
     .caro {
-    width: 98vw;
+        width: 98vw;
     }
 
 }
